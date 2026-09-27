@@ -1,5 +1,6 @@
 package com.camp.Action;
 
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
 
 import com.camp.Locator.homePageCampLocators;
@@ -83,6 +84,10 @@ public class signupPageCampActions extends baseCamp_class{
 		driver.switchTo().alert().accept();
 		Thread.sleep(3000);
 		
+		//Write message in alertbox
+		/*Alert alertmsg= driver.switchTo().alert();
+		
+		alertmsg.sendKeys("hello"); */
 	}
 	
 	

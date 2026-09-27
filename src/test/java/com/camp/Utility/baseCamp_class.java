@@ -12,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class baseCamp_class {
- 
 	public static Properties propcamp;
 	public static WebDriver driver;
 	public baseCamp_class() {
@@ -32,6 +31,8 @@ public class baseCamp_class {
 	public void initBrowserCamp() {
 		
 		String browsersetcamp = propcamp.getProperty("BROWSERCAMP1");
+		int e=10;
+		
 		if (browsersetcamp.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 			System.getProperty("user.dir") + "\\WebDriverCamp\\chromedriver.exe");
@@ -49,6 +50,7 @@ public class baseCamp_class {
 	
 	public static void getURLcamp (String URL) {
 		driver.get(propcamp.getProperty("URLCamp"));
+		
 	}
 	
 	

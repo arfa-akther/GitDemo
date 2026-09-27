@@ -5,6 +5,7 @@ import com.camp.Action.loginPageCampActions;
 import com.camp.Utility.baseCamp_class;
 import com.camp.Utility.screenShotCamp;
 
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
@@ -21,6 +22,7 @@ public class headersCamp extends baseCamp_class{
 	@Then("^Click on Home button in Homepage$")
 	public void click_on_Home_button_in_Homepage() throws Throwable {
 		HomePageCampActions.ClickonHomebuttoninHomepage();
+		
 	}
 	
 	@Then("^Verify Home page is accessible to the user$")

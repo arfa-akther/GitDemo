@@ -1,6 +1,6 @@
 Feature: This is to validate Homepage Headers functionality
 
-@runs
+
 Scenario: Verify Home link tab in the Homepage is available to access Home page
 Given Launch camp "<URL>" application
 Then Click on Home button in Homepage

@@ -1,3 +1,4 @@
+@runs
 Feature: This is to validate login functionality 
 
 

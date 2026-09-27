@@ -1,21 +1,21 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "Verify Home link tab in the Homepage is available to access Home page",
+        "line": 5,
+        "name": "Verify the Login form is displayed in login page",
         "description": "",
-        "id": "this-is-to-validate-homepage-headers-functionality;verify-home-link-tab-in-the-homepage-is-available-to-access-home-page",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-form-is-displayed-in-login-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1332193300,
+              "duration": 662125800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Launch camp \"\u003cURL\u003e\" application",
             "match": {
               "arguments": [
@@ -30,41 +30,495 @@
           },
           {
             "result": {
-              "duration": 6303560100,
+              "duration": 184936100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Click on Home button in Homepage",
+            "line": 7,
+            "name": "Click on login tab in homepage",
             "match": {
-              "location": "headersCamp.click_on_Home_button_in_Homepage()"
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 396531900,
+              "duration": 660455300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Verify Home page is accessible to the user",
+            "line": 8,
+            "name": "Verify login form contain username, password field \u0026 login button available",
             "match": {
-              "location": "headersCamp.verify_Home_page_is_accessible_to_the_user()"
+              "location": "loginCamp.verify_login_form_contain_username_password_field_login_button_available()"
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Verify the login functionality with valid credentials",
+        "description": "",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-functionality-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
-            "line": 3,
-            "name": "@runs"
+            "result": {
+              "duration": 63234000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Launch camp \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "headersCamp.launch_camp_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102453000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on login tab in homepage",
+            "match": {
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 244428400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Enter valid username",
+            "match": {
+              "location": "loginCamp.enter_valid_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72378800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter valid password",
+            "match": {
+              "location": "loginCamp.enter_valid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 73993900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click login button",
+            "match": {
+              "location": "loginCamp.click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3048848500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify user has logged in successfully",
+            "match": {
+              "location": "loginCamp.verify_user_has_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185213200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click log out button",
+            "match": {
+              "location": "loginCamp.click_log_out_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Verify the Login feature functionality with invalid credentials",
+        "description": "",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-feature-functionality-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48288300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Launch camp \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "headersCamp.launch_camp_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131902800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on login tab in homepage",
+            "match": {
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6087034700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter invalid username",
+            "match": {
+              "location": "loginCamp.enter_invalid_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6078423200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Enter invalid password",
+            "match": {
+              "location": "loginCamp.enter_invalid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59198900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Click login button",
+            "match": {
+              "location": "loginCamp.click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11805300,
+              "error_message": "org.openqa.selenium.NoAlertPresentException: no such alert\n  (Session info: chrome\u003d135.0.7049.85)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027ARFA-LAPTOP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.13\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.3 (929e0b10825d2..., userDataDir: C:\\Users\\ARFAAK~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53359}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b2469ff4eb449d581258a6cb344d4241\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)\r\n\tat com.camp.Action.loginPageCampActions.Verifyusercannotloginsuccessfullywithnouserexistcomment(loginPageCampActions.java:70)\r\n\tat StepDefinitionCamp.loginCamp.verify_user_can_not_login_successfully_with_no_user_exist_comment(loginCamp.java:78)\r\n\tat ✽.Then Verify user can not login successfully with no user exist comment(loginCamp.feature:27)\r\n",
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Verify user can not login successfully with no user exist comment",
+            "match": {
+              "location": "loginCamp.verify_user_can_not_login_successfully_with_no_user_exist_comment()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Verify the Login feature functionality with valid username and invalid password",
+        "description": "",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-feature-functionality-with-valid-username-and-invalid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132379000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Launch camp \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "headersCamp.launch_camp_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108042300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Click on login tab in homepage",
+            "match": {
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316953200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Enter valid username",
+            "match": {
+              "location": "loginCamp.enter_valid_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6087234400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Enter invalid password",
+            "match": {
+              "location": "loginCamp.enter_invalid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57751200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click login button",
+            "match": {
+              "location": "loginCamp.click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2005930700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Verify user can not login successfully with wrong pass comment",
+            "match": {
+              "location": "loginCamp.verify_user_can_not_login_successfully_with_wrong_pass_comment()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Verify the Login feature functionality with invalid username and valid password",
+        "description": "",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-feature-functionality-with-invalid-username-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41571500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Launch camp \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "headersCamp.launch_camp_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129233600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Click on login tab in homepage",
+            "match": {
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6069576500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Enter invalid username",
+            "match": {
+              "location": "loginCamp.enter_invalid_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43097100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Enter valid password",
+            "match": {
+              "location": "loginCamp.enter_valid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41026800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Click login button",
+            "match": {
+              "location": "loginCamp.click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1561400,
+              "error_message": "org.openqa.selenium.NoAlertPresentException: no such alert\n  (Session info: chrome\u003d135.0.7049.85)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027ARFA-LAPTOP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.13\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.3 (929e0b10825d2..., userDataDir: C:\\Users\\ARFAAK~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53359}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b2469ff4eb449d581258a6cb344d4241\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)\r\n\tat com.camp.Action.loginPageCampActions.Verifyusercannotloginsuccessfullywithnouserexistcomment(loginPageCampActions.java:70)\r\n\tat StepDefinitionCamp.loginCamp.verify_user_can_not_login_successfully_with_no_user_exist_comment(loginCamp.java:78)\r\n\tat ✽.Then Verify user can not login successfully with no user exist comment(loginCamp.feature:47)\r\n",
+              "status": "failed"
+            },
+            "line": 47,
+            "name": "Verify user can not login successfully with no user exist comment",
+            "match": {
+              "location": "loginCamp.verify_user_can_not_login_successfully_with_no_user_exist_comment()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Verify the Login feature functionality with empty credentials",
+        "description": "",
+        "id": "this-is-to-validate-login-functionality;verify-the-login-feature-functionality-with-empty-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 138139600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Launch camp \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "headersCamp.launch_camp_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95253100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Click on login tab in homepage",
+            "match": {
+              "location": "loginCamp.click_on_login_tab_in_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2270986400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Keep user name field empty",
+            "match": {
+              "location": "loginCamp.keep_user_name_field_empty()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2061419900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Keep password field empty",
+            "match": {
+              "location": "loginCamp.keep_password_field_empty()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62342800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Click login button",
+            "match": {
+              "location": "loginCamp.click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2006610300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Verify user Can not login successfully with no fill out comment",
+            "match": {
+              "location": "loginCamp.verify_user_Can_not_login_successfully_with_no_fill_out_comment()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "This is to validate Homepage Headers functionality",
+    "name": "This is to validate login functionality",
     "description": "",
-    "id": "this-is-to-validate-homepage-headers-functionality",
+    "id": "this-is-to-validate-login-functionality",
     "keyword": "Feature",
-    "uri": "headersCamp.feature"
+    "uri": "loginCamp.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@runs"
+      }
+    ]
   }
 ]
