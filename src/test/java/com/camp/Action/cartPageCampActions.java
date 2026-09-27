@@ -24,6 +24,7 @@ public class cartPageCampActions extends baseCamp_class {
 		Thread.sleep(3000);
 		boolean cartverify1 =CartPageCampLocators.verifyDescription.isDisplayed();
 		Assert.assertTrue(cartverify1);
+		System.out.println("somemore chnages by person A");
 		
 		Thread.sleep(3000);
 		boolean cartverify2 =CartPageCampLocators.verifyprice.isDisplayed();
