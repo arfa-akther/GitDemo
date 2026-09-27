@@ -14,6 +14,7 @@ public class homePageCampActions extends baseCamp_class {
 		Thread.sleep(3000);
 		HomePageCampLocators.hometab.click();
 		Thread.sleep(3000);
+		System.out.println(" chnages by person B in develp branch");
 	}
 	
 	

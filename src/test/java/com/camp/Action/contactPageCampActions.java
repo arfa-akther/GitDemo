@@ -16,6 +16,7 @@ public class contactPageCampActions extends baseCamp_class{
 		Thread.sleep(3000);
 		boolean contactverify =  HomePageCampLocators.verifycontactform.isDisplayed();
 		Assert.assertTrue(contactverify);
+		System.out.println(" chnages by person B in develp branch");
 		
 	}
 	

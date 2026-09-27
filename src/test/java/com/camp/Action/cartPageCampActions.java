@@ -15,6 +15,8 @@ public class cartPageCampActions extends baseCamp_class {
 		CartPageCampLocators.addcarttobutton.click();
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
+		System.out.println(" chnages by person B in develp branch");
+		System.out.println(" chnages by person B in develp branch");
 	}
 
 	public void ClickCartlinktab() {

@@ -26,6 +26,9 @@ public class aboutusPageCampActions extends baseCamp_class{
 	public void ClickonPlayvideobuttontoplaythevideo() throws Exception {
 		Thread.sleep(6000);
 		AboutusPageCampLocators.playvideo.click();
+		System.out.println(" chnages by person B in develp branch");
+		System.out.println(" chnages by person B in develp branch");
+		
 	}
 	
 	public void ClickonPausebuttontopausethevideo() throws Exception {

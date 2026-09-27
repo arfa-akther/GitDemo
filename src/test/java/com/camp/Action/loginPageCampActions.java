@@ -23,6 +23,7 @@ public class loginPageCampActions extends baseCamp_class {
 		//Thread.sleep(3000);
 		boolean categorylogin1 =  HomePageCampLocators.verifyloginform.isDisplayed();	
 		Assert.assertTrue(categorylogin1);
+		System.out.println(" chnages by person B in develp branch");
 	}
 	
 	public void Entervalidusername() throws Exception {
