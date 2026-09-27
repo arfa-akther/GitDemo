@@ -28,6 +28,16 @@ public class aboutusPageCampActions extends baseCamp_class{
 		AboutusPageCampLocators.playvideo.click();
 		System.out.println(" chnages by person B in develp branch");
 		System.out.println(" chnages by person B in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
 		
 	}
 	

@@ -17,6 +17,17 @@ public class cartPageCampActions extends baseCamp_class {
 		driver.switchTo().alert().accept();
 		System.out.println(" chnages by person B in develp branch");
 		System.out.println(" chnages by person B in develp branch");
+		
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
+		System.out.println(" chnages by person A in develp branch");
 	}
 
 	public void ClickCartlinktab() {
