@@ -14,6 +14,9 @@ public class aboutusPageCampActions extends baseCamp_class{
 		Thread.sleep(3000);
 		boolean videodisplayed =  AboutusPageCampLocators.verifyvideo.isDisplayed();
 		Assert.assertTrue(videodisplayed);
+		System.out.println("making some chnages to push in github as demo");
+		System.out.println("making some chnages to push in github as demo2");
+		System.out.println("making some chnages to push in github as demo3");
 	}	
 	
 	public void ClickonPlayvideobuttontoplaythevideo() throws Exception {
